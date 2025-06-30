@@ -5,7 +5,8 @@ pipeline {
     stages {
         stage('pull') {
             steps {
-                echo "Pulling Successful"
+                git 'https://github.com/SnehalataSutar/EKSCluster.git'
+                echo "Pull is Successful"
             }
         }
         stage('building') {
