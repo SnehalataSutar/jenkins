@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('pull') {
             steps {
-                git branch: 'main', url: 'https://github.com/SnehalataSutar/EKSCluster.git'
+                git branch: 'main', url: 'https://github.com/SnehalataSutar/studentdata.git'
                 echo "Pull is Successful"
             }
         }
