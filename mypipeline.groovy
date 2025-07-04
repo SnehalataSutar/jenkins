@@ -17,7 +17,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                withSonarQubeEnv(credentialsId: 'sonar-token') {
+                withSonarQubeEnv(installation credentialsId: 'sonar-token') {
                   mvn clean verify sonar:sonar \
                   -Dsonar.projectKey=Student \
                   -Dsonar.projectName='Student' \
