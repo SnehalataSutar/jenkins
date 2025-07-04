@@ -16,10 +16,7 @@ pipeline {
             }
         }
         stage('Test') {
-            steps {
-                withSonarQubeEnv(credentialsId: 'sonar-token') {
-    // some block
-}
+          
               
             } 
                 echo "Testing Successful"
