@@ -19,8 +19,6 @@ pipeline {
             steps {
                 withSonarQubeEnv(installationName: 'sonar-server', credentialsId: 'sonar-token') {
                  sh'''  
-                    withSonarQubeEnv(installationName: 'sonar-server', credentialsId: 'sonar-token') {
-                 sh'''  
                      mvn clean verify sonar:sonar \
                     -Dsonar.projectKey=Student \
                     -Dsonar.projectName='Student' \ '''
