@@ -20,9 +20,8 @@ pipeline {
                 withSonarQubeEnv(credentialsId: 'sonar-token') {
                      mvn clean verify sonar:sonar \
                     -Dsonar.projectKey=Student \
-                -Dsonar.projectName='Student' \
-}
-               
+                    -Dsonar.projectName='Student' \
+                }
                 echo "Testing Successful"
             }
         }
