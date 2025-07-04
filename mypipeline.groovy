@@ -47,8 +47,8 @@ pipeline {
                 '''
              } 
             echo "Testing Successful"
-    }        
-}
+            }        
+        }
 
         stage('Deploy') {
             steps {
