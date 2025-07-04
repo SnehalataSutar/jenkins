@@ -23,7 +23,7 @@ pipeline {
                     -Dsonar.projectKey=Student \
                     -Dsonar.projectName='Student' \ '''
                 }
-                } 
+            } 
                 echo "Testing Successful"
             }
         }
