@@ -17,6 +17,9 @@ pipeline {
         }
         stage('Test') {
             steps {
+                withSonarQubeEnv(credentialsId: 'sonar-token') {
+    // some block
+}
                 withSonarQubeEnv(installationName: 'sonar-server', credentialsId: 'sonar-token') {
                  sh'''  
                      mvn clean verify sonar:sonar \
