@@ -21,7 +21,7 @@ pipeline {
                 -Dsonar.projectKey=Student \
                 -Dsonar.projectName='Student' \
                 -Dsonar.host.url=http://35.173.122.178:9000 \
-  -Dsonar.token=sqp_2b7a3211dc1a6b07caceb719028fd83a08a17e3d
+                -Dsonar.token=sqp_2b7a3211dc1a6b07caceb719028fd83a08a17e3d
                 echo "Testing Successful"
             }
         }
