@@ -16,10 +16,10 @@ pipeline {
             }
         }
         stage('Test') {
-          
-              
+            steps {
+              echo "Testing Successful"
             } 
-                echo "Testing Successful"
+                
             }
         }
         stage('Deploy') {
