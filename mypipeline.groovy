@@ -10,8 +10,8 @@ pipeline {
             }
         }
         stage('building') {
-    steps {
-        sh 'sudo rm -rf target/'         // <-- Manually clean
+            steps {
+                sh 'sudo rm -rf target/'         // <-- Manually clean
         sh 'sudo mvn clean package'
         echo "Building Successful"
     }
